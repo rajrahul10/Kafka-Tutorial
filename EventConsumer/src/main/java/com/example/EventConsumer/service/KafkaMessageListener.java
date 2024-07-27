@@ -12,6 +12,6 @@ public class KafkaMessageListener {
 
     @KafkaListener(topics="my-topic-002", groupId = "my-group-002")
     public void consume(String message) {
-        logger.info("Consumer consume the message");
+        logger.info("Consumer consume the message: {}", message);
     }
 }
